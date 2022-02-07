@@ -1,0 +1,79 @@
+body{
+
+    background-color: black;
+    .movie-box{
+        width: 70%;
+        background-color: black;
+        margin: auto;
+        min-height: 20vh;
+        color: #fff;
+        margin-top: 20vh;
+    
+        .img-text{
+            display: flex;
+            align-items: center;
+    
+            .image-box{
+                flex: 1;
+            }
+            .texts{
+                flex: 2;
+                text-align: center;
+    
+                h2{
+                    font-size: 30px;
+                    color: gold;
+                    font-family: sans-serif;
+                    text-transform: uppercase;
+                }
+                
+            }
+        }
+    
+        .overview-text{
+            margin-top: 5vh;
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 5vh;
+            margin-top: 10vh;
+
+            button{
+                background-color: gold;
+                border: none;
+                width: 15vh;
+                padding: 10px 10px;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: black;
+                    color: gold;
+                }
+                
+            }
+
+        
+
+            
+        }
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    
+
+    .img-text{
+        flex-direction: column;
+        
+        .image-box{
+            width: 70%;
+            margin-bottom: 5vh;
+        }
+    }
+
+    
+}
+

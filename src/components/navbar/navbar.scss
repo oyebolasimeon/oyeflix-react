@@ -1,0 +1,42 @@
+.navbar {
+    padding: 0 3rem;
+    background-color: black;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    // width: 100%;
+    border-bottom: 1px solid #fff;
+    .left {
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            padding: 0;
+        }
+    }
+    .right {
+
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                margin: 0 8px;
+                font-weight: 500;
+                transition: 250ms ease;
+
+                &:hover {
+                    color: chocolate;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        .right{
+            display: none;
+        }
+    }
+    
+}

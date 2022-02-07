@@ -1,0 +1,66 @@
+.banner{
+    display: flex;
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    // margin-top: 9vh;
+
+    .box-1{
+        background-image: url("../../assets/background.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        // filter: blur(1px);
+        // -webkit-filter: blur(1px);
+        .opac{
+            // background-color: black;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            // opacity: .5;
+            position: fixed;
+
+            .text-box{
+                margin: auto;
+                color: #fff;
+                text-align: center;
+                margin-top: 20vh;
+                
+
+              h3{
+                    font-size: 50px;
+                   color: #fff;
+                   font-weight: 900;
+                   font-family: sans-serif
+                }
+
+                p{
+                    font-size: 27px;
+                    font-weight: 300;
+                    font-family: sans-serif;
+                    padding-top: 0;
+                }
+
+                .get-started{
+                    background-color:#F40812;
+                    border: none;
+                    color: #fff;
+                    width: 30vh;
+                    height: 5vh;
+                    font-size: 20px;
+                    font-family: sans-serif;
+                    border-radius: 5px 5px;
+                    margin-top: 5vh;
+                    cursor: pointer;
+                    font-weight: 500;
+
+                    &:hover{
+                        color: red;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

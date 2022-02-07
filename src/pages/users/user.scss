@@ -1,0 +1,59 @@
+.user {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: #fff;
+
+    
+
+    h1 {
+        color: rgb(33, 33, 146);
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .postlist {
+
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        min-height: 5vh;
+
+        .post {
+            margin: 10px auto;
+            padding: 1rem;
+            box-shadow: 2px 4px 10px rgb(161, 161, 161);
+        
+            h3 {
+                color: #fff;
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+            p {
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .user{
+        .postlist{
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+        }
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    .user{
+        .postlist{
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+    
+}
